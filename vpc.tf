@@ -56,7 +56,7 @@ resource "aws_subnet" "ap-northeast-1-public" {
   vpc_id = aws_vpc.main_vpc.id
 
   cidr_block        = var.public_subnet_cidr
-  availability_zone = "ap-northeast-1"
+  availability_zone = "ap-northeast-1a"
 
   tags = {
     Name = "Public Subnet"
@@ -67,7 +67,7 @@ resource "aws_subnet" "ap-northeast-1-private" {
   vpc_id = aws_vpc.main_vpc.id
 
   cidr_block        = var.private_subnet_cidr
-  availability_zone = "ap-northeast-1"
+  availability_zone = "ap-northeast-1a"
 
   tags = {
     Name = "Private Subnet"
