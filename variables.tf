@@ -1,20 +1,20 @@
 variable "aws_key_path" {
-  default = "/home/usuario/psepulveda-ireland.pem"
+  default = "/home/usuario/Proyectos Terraform/Ansible/Proyecto1/fgp-tokio"
 }
 
 variable "aws_key_name" {
-  default = "psepulveda-ireland"
+  default = "fgp-tokio"
 }
 
 variable "aws_region" {
   description = "Región EC2 para la VPC"
-  default     = "eu-west-1"
+  default     = "ap-northeast-1"
 }
 
 variable "amis" {
   description = "AMIs por region"
   default = {
-    eu-west-1 = "ami-0ba1c3ef9156479a2"
+    ap-northeast-1 = "ami-0219763ae52b16aca""
   }
 }
 
